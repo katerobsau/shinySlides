@@ -62,9 +62,9 @@ var headers = document.getElementsByTagName("h2");
 add_title_banner(slides[0]);
 add_big_logo(slides[0]);
 change_bg_color(slides[0], 'white');
-add_text(slides[0], "my-title", "How Do We Model Rainfall Extremes?");
-add_text(slides[0], "my-sub-title", "Supervisors: \n Peter Taylor, David Karoly \n and Alec Stephenson");
-add_text(slides[0], "my-info", "Completion Seminar: September 21st 2018");
+add_text(slides[0], "my-title", "How to make Ioslides look like Beamer");
+add_text(slides[0], "my-sub-title", "Jackson Kwok and Kate Saunders");
+add_text(slides[0], "my-info", "December 2018");
 
 // Handle normal slide
 for (i = 1; i < slides.length; i++) {
