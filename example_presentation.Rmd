@@ -16,6 +16,8 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(shiny)
+library()
 ```
 
 ## R Markdown
@@ -41,5 +43,21 @@ summary(cars)
 ```{r pressure}
 plot(pressure)
 ```
+
+## Slide with Shiny
+
+```{r, echo = FALSE}
+addResourcePath("assets", "assets/")
+shinyAppDir("shiny_apps/record_slider/",
+ options = list(width = "100%", height = 700)
+)
+```
+
+## {.fullslide}
+
+<center>
+<img src="img/Storm_Vas2.jpg">
+</center>
+
 
 <script src = "assets/torino_style.js"></script>
