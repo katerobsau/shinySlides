@@ -5,7 +5,7 @@
 #' @export
 new_beamer_style <- function() {
   if (dir.exists("assets"))
-    stop("Directory 'assets' already exists. Use overwrite = T if you'd like to overwrite it.")
+    stop("Directory 'assets' already exists. Remove it, then re-run the function.")
 
   file.copy(
     from = system.file("torino_uom_template/", package = "shinySlides"),
