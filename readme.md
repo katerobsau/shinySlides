@@ -16,42 +16,41 @@ Creates a beamer like template for ioslides that is compatible with shiny apps
 4. To include a shiny app, add `shiny::addResourcePath("assets", "assets/")` right before the ShinyApp. You only need to do this once for the entire document.
 
 This document should have a structure as follows:
-```
----
-title: "..."
-...other metadata ...
-output: 
-  ioslides_presentation:
-    runtime: shiny
-    css: assets/torino_style.css
----
 
-## A slide
-
-...Contents here...
-
-
-## A shiny app
-
-  ```{r, echo = FALSE}
-  addResourcePath("assets", "assets/")   # Must include this line !
-  shinyAppDir("DIRECTORY_CONTAINING_THE_SHINY_APP",
-   options = list(width = "100%", height = 700)
-  )
-  ```
-
-## Some other slides
-
-...
-
-
-<script src = "assets/beamer.js"></script>
-```
+    ---
+    title: "..."
+    ...other metadata ...
+    output: 
+      ioslides_presentation:
+        runtime: shiny
+        css: assets/torino_style.css
+    ---
+    
+    ## A slide
+    
+    ...Contents here...
+    
+    
+    ## A shiny app
+    
+    ```{r, echo = FALSE}
+    addResourcePath("assets", "assets/")   # Must include this line !
+    shinyAppDir("DIRECTORY_CONTAINING_THE_SHINY_APP",
+     options = list(width = "100%", height = 700)
+    )
+    ```
+    
+    ## Some other slides
+    
+    ...
+    
+    
+    <script src = "assets/beamer.js"></script>
 
 
 ### Known issue
 Problem: The images and shiny app don't render properly in the second time if you render the exact same document twice consecutively. 
 
-Why: (Guess) RStudio seems to do some sort of caching when a shiny app is rendered, causing some path issues.
+Why: (A guess) RStudio seems to do some sort of caching when a shiny app is rendered, causing some path issues.
 
 Solution: Change the document by adding/removing a space anywhere, then knit the document. This will force a fresh rendering.
