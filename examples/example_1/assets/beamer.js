@@ -18,6 +18,14 @@ function addTitleLogo(slideDOM) {
   slideDOM.appendChild(imgDOM);
 }
 
+function addSlideLogo(slideDOM) {
+  let imgDOM = createElement("img");
+  imgDOM.src = "assets/logo.png";
+  imgDOM.classList.add("img-logo");
+  slideDOM.appendChild(imgDOM);
+}
+
+
 function addColorBanners(slideDOM) {
   let newClasses = ["header-banner", "footer-banner-one", "footer-banner-two",
                     "footer-banner-three"];
@@ -44,6 +52,7 @@ function addTheme(doc) {
   let allSlides = doc.querySelectorAll("slide:not(:first-child)");
   allSlides.forEach(addColorBanners);
   allSlides.forEach(changeBackgroundColor);
+  allSlides.forEach(addSlideLogo);
 
   let h2DOM = doc.querySelectorAll("h2");
   h2DOM.forEach(addUnderline);
