@@ -1,0 +1,32 @@
+/* https://www.tudelft.nl/huisstijl/kleuren/ */
+/*#00A6D6*/
+
+.footer-banner {
+  background-color: #00A6D6;
+  width: 100%;
+  height: 7%;
+  position: absolute;
+  left: 0;
+  top: 94%;
+}
+
+.header-underline {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #00A6D6;
+}
+
+.slide-logo-text {
+  position: absolute;
+  left: 5%;
+  top: 93%;
+  height: 10%;
+}
+
+.slide-logo-flame {
+  position: absolute;
+  left: 85%;
+  top: 0;
+  height: 15%;
+}
+
