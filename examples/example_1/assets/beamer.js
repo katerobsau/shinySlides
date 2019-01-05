@@ -25,7 +25,6 @@ function addSlideLogo(slideDOM) {
   slideDOM.appendChild(imgDOM);
 }
 
-
 function addColorBanners(slideDOM) {
   let newClasses = ["header-banner", "footer-banner-one", "footer-banner-two",
                     "footer-banner-three"];

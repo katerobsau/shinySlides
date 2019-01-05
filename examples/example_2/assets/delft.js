@@ -4,6 +4,26 @@ function createElement(tag0, class0) {
   return newEL;
 }
 
+function addTitleColorBanners(slideDOM) {
+  let newClasses = [1,2,3,4,5].map(x => "title-header-" + x);
+  newClasses.map(x => createElement("div", x))
+            .forEach(x => slideDOM.prepend(x));
+}
+
+function addTitleBackground(slideDOM) {
+  let imgDOM = createElement("img");
+  imgDOM.src = "assets/title_background.png";
+  imgDOM.classList.add("title-background");
+  slideDOM.appendChild(imgDOM);
+}
+
+function addTitleLogoText(slideDOM) {
+  let imgDOM = createElement("img");
+  imgDOM.src = "assets/title_logo.png";
+  imgDOM.classList.add("title-logo-text");
+  slideDOM.appendChild(imgDOM);
+}
+
 function addSlideLogoText(slideDOM) {
   let imgDOM = createElement("img");
   imgDOM.src = "assets/slide_logo.png";
@@ -36,6 +56,11 @@ function addUnderline(h2DOM) {
 
 // Apply theme to slides =================================================
 function addTheme(doc) {
+
+  let titleSlide = doc.querySelector(".title-slide");
+  addTitleColorBanners(titleSlide);
+  addTitleBackground(titleSlide);
+  addTitleLogoText(titleSlide);
 
   let allSlides = doc.querySelectorAll("slide:not(:first-child)");
   allSlides.forEach(addColorBanners);

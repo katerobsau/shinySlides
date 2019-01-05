@@ -1,6 +1,5 @@
 ---
 title: "Super-long research title here"
-subtitle: "TU Delft"
 author: "Researcher name"
 date: "Position title"
 output: 
