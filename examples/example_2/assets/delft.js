@@ -33,7 +33,7 @@ function addSlideLogoText(slideDOM) {
 
 function addSlideLogoFlame(slideDOM) {
   let imgDOM = createElement("img");
-  imgDOM.src = "assets/slide_flame.jpg";
+  imgDOM.src = "assets/slide_flame_transparent.gif";
   imgDOM.classList.add("slide-logo-flame");
   slideDOM.appendChild(imgDOM);
 }
