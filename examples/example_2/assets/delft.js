@@ -12,9 +12,9 @@ function addTitleColorBanners(slideDOM) {
 
 function addTitleBackground(slideDOM) {
   let imgDOM = createElement("img");
-  imgDOM.src = "assets/title_background.png";
+  imgDOM.src = "assets/title_background2.jpg";
   imgDOM.classList.add("title-background");
-  slideDOM.appendChild(imgDOM);
+  slideDOM.prepend(imgDOM);
 }
 
 function addTitleLogoText(slideDOM) {
