@@ -1,4 +1,3 @@
 name: "ioslides - Torino style"
 description: A ioslides template with torino style
-create_dir: true
-
+create_dir: false

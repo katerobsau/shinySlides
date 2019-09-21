@@ -2,7 +2,9 @@
 title: "Slides Title"
 author: "Slides Author"
 date: "`r Sys.Date()`"
-output: shinySlides::torino
+output: 
+  shinySlides::torino:
+    css: ./assets/torino.css
 ---
 
 ```{r setup, include=FALSE}
