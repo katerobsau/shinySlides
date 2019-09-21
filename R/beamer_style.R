@@ -1,17 +1,17 @@
-#' Create beamer style-sheet
-#' This function creates an 'assets' folder at the working directory.
-#' The folder contains a stylesheet and other auxiliary files to be applied
-#' to an ioslide-document.
+#' torino-style ioslides
+#' @param ... Extra parameters to pass to `rmarkdown::ioslides_presentation`.
 #' @export
-new_beamer_style <- function() {
-  if (dir.exists("assets"))
-    stop("Directory 'assets' already exists. Remove it, then re-run the function.")
+torino <- function(...) {
+  # locations of resource files in the package
+  pkg_resource <- function(...) {
+    path <- "rmarkdown/templates/torino/"
+    system.file(file.path(path, ...), package = "shinySlides")
+  }
+  template <- pkg_resource("torino.html")
 
-  file.copy(
-    from = system.file("torino_uom_template/", package = "shinySlides"),
-    to = getwd(),
-    recursive = T
+  # call the base html_document function
+  rmarkdown::ioslides_presentation(
+    includes = rmarkdown::includes(after_body = template),
+    ...
   )
-
-  file.rename("torino_uom_template", "assets")
 }
