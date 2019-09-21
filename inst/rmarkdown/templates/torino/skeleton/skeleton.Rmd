@@ -5,6 +5,7 @@ date: "`r Sys.Date()`"
 output: 
   shinySlides::torino:
     css: ./assets/torino.css
+runtime: shiny
 ---
 
 ```{r setup, include=FALSE}
