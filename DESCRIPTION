@@ -1,15 +1,16 @@
 Package: shinySlides
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Title: Beamer template for ioslides with embedded shiny apps
+Version: 0.1.1
+Authors@R: c(
+    person("Kate", "Saunders", email = "first.last@example.com", role = c("aut", "cre")), 
+    person("Jackson", "Kwok", email = "kwokcf@unimelb.edu.au", role = "ctb"))
+Maintainer: Kate Saunders <yourself@somewhere.net>
+Description: Creates a beamer-like template for ioslides with embedded shiny apps.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
