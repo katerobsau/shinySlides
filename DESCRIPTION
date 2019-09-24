@@ -1,7 +1,7 @@
 Package: shinySlides
 Type: Package
 Title: Beamer template for ioslides with embedded shiny apps
-Version: 0.1.1
+Version: 0.1.6
 Authors@R: c(
     person("Kate", "Saunders", email = "first.last@example.com", role = c("aut", "cre")), 
     person("Jackson", "Kwok", email = "kwokcf@unimelb.edu.au", role = "ctb"))
