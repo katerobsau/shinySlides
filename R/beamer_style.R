@@ -22,6 +22,7 @@ torino <- function(...) {
 
 #' TUDelft-style ioslides
 #' @param ... Extra parameters to pass to `rmarkdown::ioslides_presentation`.
+#' @references https://www.tudelft.nl/huisstijl/kleuren/
 #' @export
 TUDelft <- function(...) {
   # locations of resource files in the package
