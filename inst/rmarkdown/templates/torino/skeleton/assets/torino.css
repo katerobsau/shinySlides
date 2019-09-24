@@ -42,7 +42,7 @@
 
 .img-logo {
   position: absolute;
-  left: 85%;
+  right: 6%;
   top: 5%;
   height: 10%;
 }
@@ -122,5 +122,11 @@
 }
 
 slides > slide:not(.nobackground):after {
-  content: '';
+  font-size: 17pt;
+  content: attr(data-slide-num) "/" attr(data-total-slides);
+  position: absolute;
+  bottom: 20px;
+  right: 7%;
+  line-height: 1.9;
 }
+
