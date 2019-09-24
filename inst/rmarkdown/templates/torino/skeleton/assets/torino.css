@@ -125,8 +125,7 @@ slides > slide:not(.nobackground):after {
   font-size: 17pt;
   content: attr(data-slide-num) "/" attr(data-total-slides);
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   right: 7%;
   line-height: 1.9;
 }
-
