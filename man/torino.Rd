@@ -12,3 +12,11 @@ torino(...)
 \description{
 torino-style ioslides
 }
+\note{
+The original torino style is designed by Marco Barisione, see references for more details.
+}
+\references{
+https://github.com/bbatsov/beamer-torino-theme
+
+https://blog.barisione.org/2007/09/18/torino-a-pretty-theme-for-latex-beamer/
+}
